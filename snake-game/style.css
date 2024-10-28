@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+}
+
+#gameContainer {
+    position: relative;
+}
+
+canvas {
+    background-color: #1e1e1e;
+    display: block;
+    margin: 0 auto;
+}
+
+#scoreBoard {
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    color: white;
+}
+#scoreBoard2 {
+    position:absolute;
+    top: 1px;
+    right: 10px;
+    color: white;
+}
+
+#gameOverPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#startButton {
+    padding: 15px 30px;
+    font-size: 24px;
+    color: white;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover {
+    background-color: #21a1f1; /* Darker shade on hover */
+}
